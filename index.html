@@ -1,0 +1,497 @@
+<html>
+
+<head>
+    <title>SAKURA RAMEN</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?tracking=1&thirdparty=1&always=1"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .header {
+            background-image: url("img/bgr1.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px;
+        }
+
+        .box-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .saku-flower {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .box-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            gap: 40px
+        }
+
+        .box-right a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navigation:hover {
+            font-weight: bold;
+        }
+
+        .phone-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #b30b0b;
+            border-color: white;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 10px;
+            padding: 10px
+        }
+
+        .phone-box:hover {
+            background-color: #c92626;
+        }
+
+        .phone-icon {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .header-below {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        h1 {
+            font-size: 80px;
+            margin: 0px;
+        }
+
+        .undertitle {
+            font-size: 30px;
+        }
+
+        .container-order {
+            font-family: 'Economica', sans-serif;
+            font-weight: bold;
+            padding-bottom: 60px;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 70px;
+            margin: 0px;
+            padding: 50px;
+            color: #8f212e;
+        }
+
+        .pickproduct {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .meal-icons {
+            padding-bottom: 20px;
+        }
+
+        .container-menu {
+            background-image: url("img/background.jpg");
+            font-family: 'Economica', sans-serif;
+            font-weight: bold;
+            object-fit: contain;
+            background-size: cover;
+        }
+
+        .ramen-table {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .ramen-reverse-table {
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+        }
+
+        .ramen-image {
+            width: 350px;
+            height: 350px;
+            object-fit: contain;
+            padding: 60px;
+        }
+
+        .ramen-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 30px;
+            padding-top: 90px;
+        }
+
+        h3 {
+            font-size: 50px;
+            margin: 0px;
+        }
+
+        .table-description-price {
+            color: #585858;
+            margin-top: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        tr td:first-child {
+            padding-right: 170px;
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .price {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .container-find-us {
+            font-family: 'Raleway', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .iconandadress {
+            padding: 0 40;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .location-icon {
+            height: 30px;
+            object-fit: contain;
+        }
+
+        .adress {
+            font-size: 20px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .map {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .social-icon-box {
+            padding: 30px;
+        }
+
+        .social-icon {
+            padding: 15px;
+        }
+
+        .Freepik-flaticon {
+            text-align: center;
+        }
+
+        /*Just for smartphones*/
+        @media(max-width: 1024px) {
+            .hide-mobile {
+                display: none;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 50px;
+            }
+
+            h2,
+            h3 {
+                text-align: center;
+            }
+
+            .undertitle {
+                margin-top: 30px;
+                font-size: 20px;
+            }
+
+            .pickproduct {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .product {
+                margin-bottom: 75px;
+            }
+
+            .ramen-table {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .ramen-reverse-table {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .ramen-image {
+                width: 250px;
+                height: 250px;
+                padding: 40px;
+            }
+
+            .ramen-details {
+                padding: 40px;
+                padding-top: 0;
+            }
+
+            tr td:first-child {
+                padding-right: 20px;
+            }
+
+            .footer {
+                display: flex;
+                flex-direction: column;
+                padding-top: 30px;
+                align-items: center;
+            }
+
+            .social-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .social-icon-box {
+                padding: 20px;
+            }
+
+            .saklogo {
+                width: 300px;
+                height: auto;
+            }
+
+            .box-right {
+                font-size: 16px;
+            }
+
+            .phone-icon {
+                width: 25px;
+                height: 25px;
+                margin-right: 10px;
+            }
+
+            .header-top {
+                justify-content: space-between;
+                padding: 60 40;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="box-left">
+                <img src="img/saku.png" class="saku-flower">
+            </div>
+            <div class="box-right">
+                <a href="#menu" title="OUR MENU" class="navigation hide-mobile">MENU </a>
+                <a href="#locations" title="FIND US AT" class="navigation hide-mobile">LOCATIONS </a>
+                <a href="#about" title="ABOUT" class="navigation hide-mobile">ABOUT </a>
+                <a href="tel: 0176 54564534" class="phone-box">
+                    <img src="img/phone.png" class="phone-icon">
+                    <span>
+                        0176 54564534
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="header-below">
+            <h1><b>SAKURA RAMEN</b></h1>
+            <span class="undertitle">
+                The best Ramen in Town
+            </span>
+        </div>
+    </div>
+
+    <div class="container-order">
+        <h2>HOW TO ORDER</h2>
+        <div class="pickproduct">
+            <div class="product">
+                <img src="img/bowl_icon.jpg" class="meal-icons">
+                <div>Pick</div>
+                <div>Your Noodle</div>
+            </div>
+            <div class="product">
+                <img src="img/broth_icon.png" class="meal-icons">
+                <div>Pick</div>
+                <div>Your Broth</div>
+            </div>
+            <div class="product">
+                <img src="img/eggs_icon.jpg" class="meal-icons">
+                <div>Add Your</div>
+                <div>Toppings</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu" class="container-menu">
+        <h2><b>OUR MENU</b></h2>
+        <div class="ramen-table">
+            <img src="img/r1.png" class="ramen-image">
+            <div class="ramen-details">
+                <h3><b>Tonkasu Ramen</b></h3>
+                <table class="table-description-price">
+                    <tr>
+                        <td>CHICKEN</td>
+                        <td>11.95 €</td>
+                    </tr>
+                    <tr>
+                        <td>BEEF</td>
+                        <td>12.95 €</td>
+                    </tr>
+                    <tr>
+                        <td>SHRIMP</td>
+                        <td>13.95 €</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="ramen-reverse-table">
+            <img src="img/r2.png" class="ramen-image">
+            <div class="ramen-details">
+                <h3><b>Spicy Miso Ramen</b></h3>
+                <table class="table-description-price">
+                    <tr>
+                        <td>CHICKEN</td>
+                        <td>11.95 €</td>
+                    </tr>
+                    <tr>
+                        <td>BEEF</td>
+                        <td>12.95 €</td>
+                    </tr>
+                    <tr>
+                        <td>SHRIMP</td>
+                        <td>13.95 €</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="ramen-table">
+            <img src="img/r3.png" class="ramen-image">
+            <div class="ramen-details">
+                <h3><b>Shio Ramen</b></h3>
+                <table class="table-description-price">
+                    <tr>
+                        <td>CHICKEN</td>
+                        <td>11.95 €</td>
+                    </tr>
+                    <tr>
+                        <td>BEEF</td>
+                        <td>12.95 €</td>
+                    </tr>
+                    <tr>
+                        <td>SHRIMP</td>
+                        <td>13.95 €</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="locations" class="container-find-us">
+        <h2>FIND US AT</h2>
+        <div class="iconandadress">
+            <img class="location-icon" src="img/LO.png">
+            <span class="adress">Kapuzinerstraße 31, München, BY 80337</span>
+        </div>
+        <div>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12822.484621521467!2d19.06376226610195!3d47.4977960383588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc95d7dba0601f2ec!2sSakura%20Ramen!5e0!3m2!1sde!2sit!4v1644435552610!5m2!1sde!2sit"
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+    <div id="about" class="footer">
+        <div>
+            <img src="img/saklogo.png" class="saklogo">
+        </div>
+        <div class="social-icon-box">
+            <img src="img/fb.png" class="social-icon">
+            <img src="img/ins.png" class="social-icon">
+            <img src="img/tripad.png" class="social-icon">
+        </div>
+    </div>
+    <div class="Freepik-flaticon">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+            title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+
+
+</body>
+
+
+</html>
